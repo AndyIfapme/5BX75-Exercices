@@ -1,28 +1,48 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace WebApp_01.Pages
 {
     public class TrombinoscopeModel : PageModel
     {
-        public Student Student { get; set; }
+        public List<Student> Students { get; set; }
 
         public void OnGet()
         {
-            Student = new Student()
+            Students = new List<Student>()
             {
-                Firstname = "Andy",
-                Lastname = "Bianco",
-                Description = "Formateur"
+                new Student()
+                {
+                    Firstname = "MEDHI",
+                    Lastname = "BAUWENS",
+                    Description = "Apprenant"
+                },
+                new Student()
+                {
+                    Firstname = "GWENDOLINE",
+                    Lastname = "BLOTIAU",
+                    Description = "Apprenant"
+                },
+                new Student()
+                {
+                    Firstname = "ERWAN",
+                    Lastname = "BOUGARD",
+                    Description = "Apprenant"
+                },
+                new Student()
+                {
+                    Firstname = "LÉO",
+                    Lastname = "CLARINVAL",
+                    Description = "Apprenant"
+                }
             };
         }
     }
 
     public class Student
     {
-        public string Firstname { get; set; }
-        public string Lastname { get; set; }
+        public required string Firstname { get; set; }
+        public required string Lastname { get; set; }
 
-        public string Description { get; set; }
+        public required string Description { get; set; }
     }
 }

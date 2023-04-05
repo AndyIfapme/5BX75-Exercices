@@ -6,18 +6,21 @@
 <h1>Trombinoscopes</h1>
 <div class="container">
     <div class="row">
-        <div class="col-xs-12 col-md-6 col-lg-3 col-xl-2 mt-2">
-            <div class="card">
-                <img
-                    src="imgs/avatar.svg"
-                    class="card-img-top"
-                    alt="..."
-                />
-                <div class="card-body">
-                    <h5 class="card-title text-center">@Model.Student.Firstname @Model.Student.Lastname</h5>
-                    <p class="card-text text-center">@Model.Student.Description</p>
+        
+        @foreach (var student in Model.Students)
+        {
+            <div class="col-xs-12 col-md-6 col-lg-3 col-xl-2 mt-2">
+                <div class="card">
+                    <img
+                        src="imgs/avatar.svg"
+                        class="card-img-top"
+                        alt="..."/>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">@student.Firstname @student.Lastname</h5>
+                        <p class="card-text text-center">@student.Description</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        }
     </div>
 </div>

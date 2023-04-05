@@ -25,7 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Theories", "Theories", "{8C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theory_class", "Theory_class\Theory_class.csproj", "{BBD91910-28F7-4788-A862-7F3D7F9F6B26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Theory_interface", "Theory_interface\Theory_interface.csproj", "{7B9A84DF-BA46-47EB-8F44-813F569B74FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Theory_interface", "Theory_interface\Theory_interface.csproj", "{7B9A84DF-BA46-47EB-8F44-813F569B74FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
