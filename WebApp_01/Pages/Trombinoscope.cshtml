@@ -1,26 +1,23 @@
 ﻿@page
 @model WebApp_01.Pages.TrombinoscopeModel
 @{
-    ViewData["Title"] = "Trombinoscope";
 }
 
+<h1>Trombinoscopes</h1>
 <div class="container">
     <div class="row">
-        @foreach (var student in Model.Students)
-        {
-            <div class="col-xs-12 col-md-6 col-lg-3 col-xl-2 mt-2">
-                <div class="card">
-                    <img
-                        src="trombi-1.svg"
-                        class="card-img-top"
-                        alt="..."
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title text-center">@student.Firstname @student.Lastname</h5>
-                        <p class="card-text text-center">@student.Description</p>
-                    </div>
+        <div class="col-xs-12 col-md-6 col-lg-3 col-xl-2 mt-2">
+            <div class="card">
+                <img
+                    src="imgs/avatar.svg"
+                    class="card-img-top"
+                    alt="..."
+                />
+                <div class="card-body">
+                    <h5 class="card-title text-center">@Model.Student.Firstname @Model.Student.Lastname</h5>
+                    <p class="card-text text-center">@Model.Student.Description</p>
                 </div>
             </div>
-        }
+        </div>
     </div>
 </div>

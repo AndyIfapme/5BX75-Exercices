@@ -4,8 +4,7 @@ namespace Exercice_04
 {
     internal class Program
     {
-        /*5
-         * 5
+        /*
          *  Pouvoir effectuer une soustraction.
          *
          *  La division par 0 est impossible,
@@ -19,36 +18,16 @@ namespace Exercice_04
             int a, b;
 
             Console.WriteLine("Programe qui effectue une division");
+            Console.Write("Veuillez introduire un nombre : ");
 
-            Console.WriteLine("Veuillez introduire un nombre : ");
-            bool isOk = int.TryParse(Console.ReadLine()!, out a);
-
-            if (isOk)
+            if (int.TryParse(Console.ReadLine()!, out a))
             {
-                Console.WriteLine("Veuillez introduire votre diviseur : ");
-                isOk = int.TryParse(Console.ReadLine()!, out b);
-
-                if (isOk)
-                {
-                    if (b == 0)
-                    {
-                        Console.WriteLine("Vous ne pouvez pas diviser par 0 !");
-                    }
-                    else
-                    {
-                        Console.WriteLine(a / b);
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Vous n'avez pas introduit un nombre !");
-                }
+                Console.WriteLine(a);
             }
             else
             {
-                Console.WriteLine("Vous n'avez pas introduit un nombre !");
+                Console.WriteLine("Vous n'avez pas introduit un chiffre !");
             }
-           
         }
     }
 }
