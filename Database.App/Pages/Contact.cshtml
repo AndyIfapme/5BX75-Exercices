@@ -1,0 +1,27 @@
+﻿@page
+@model ContactModel
+@{
+}
+
+<h1>Contact</h1>
+
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="Contact.Email" class="form-label">Email</label>
+        <input type="email" asp-for="Contact.Email" class="form-control" placeholder="Votre email">
+        <span asp-validation-for="Contact.Email" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Contact.Subject" class="form-label">Sujet</label>
+        <input type="text" asp-for="Contact.Subject" class="form-control" placeholder="Votre sujet...">
+        <span asp-validation-for="Contact.Subject" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Contact.Message" class="form-label">Message</label>
+        <textarea asp-for="Contact.Message" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="Contact.Message" class="text-danger"></span>
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">Envoyer</button>
+    </div>
+</form>

@@ -1,0 +1,12 @@
+﻿@page
+@model Database.App.Pages.ListContactsModel
+@{
+}
+
+@foreach (var contact in Model.Contacts)
+{
+    <p>@contact.Subject</p>
+    <p>@contact.Email</p>
+    <p>@contact.Message</p>
+    <hr >
+}
